@@ -10,26 +10,22 @@ for (let i = 0; i <= teachers.length - 1; i++) {
 
 // 1. Utilizzando un indice sull'array teachers, cambia il valore della
 // variabile fourthTeacher qui sotto in modo che sia il quarto insegnante elencato nell'array
-const fourthTeacher = teachers[4];
+const fourthTeacher = teachers[3];
+console.log(fourthTeacher);
+
 
 // 2. Sostituisci il quinto insegnante nell'array teachers con 'Patrick'
-teachers[5] = "Patrick";
+teachers[4] = "Patrick";
 console.log(teachers);
 
 
 // 3. Rimuovi l'ultimo insegnante dall'array e salvalo nella variabile lastTeacher qui sotto
-const lastTeacher = teachers[teachers.length -1];
-console.log(lastTeacher);//Dimostrazione di averlo salvato correttamente
-teachers.pop(); //Lo elimino dalla lista ultima posizione
-console.log(lastTeacher); //Comunque salvato
-console.log(teachers[teachers.length -1]); //Nuovo ultimo posto
+const lastTeacher = teachers.pop();
+console.log(lastTeacher);
 
 // 4. Rimuovi il primo insegnante dall'array e salvalo nella variabile firstTeacher qui sotto
-const firstTeacher = teachers[0];
-console.log(firstTeacher);//Dimostrazione di averlo salvato correttamente
-teachers.shift(); //Lo elimino dalla lista prima posizione
-console.log(firstTeacher); //Comunque salvato
-console.log(teachers[0]); //Nuovo primo posto
+const firstTeacher = teachers.shift();
+console.log(firstTeacher);//
 
 
 // 5. Aggiungi un insegnante di nome 'Vanessa' alla fine dell'array teachers
